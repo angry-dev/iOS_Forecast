@@ -30,6 +30,7 @@
 		147F79FC27A68E2F00DA6CE1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		14C8FE9B27A6A41D00E469FA /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
 		14C8FE9D27A6A43500E469FA /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		14C8FEA027A6A7DD00E469FA /* CurrentWeatherAPI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CurrentWeatherAPI.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		147F79E727A68B0E00DA6CE1 /* ForecastApp */ = {
 			isa = PBXGroup;
 			children = (
+				14C8FE9F27A6A7BF00E469FA /* API */,
 				14C8FE9A27A6A3F200E469FA /* Cell */,
 				147F79E827A68B0E00DA6CE1 /* AppDelegate.swift */,
 				147F79EA27A68B0F00DA6CE1 /* SceneDelegate.swift */,
@@ -82,6 +84,14 @@
 				14C8FE9D27A6A43500E469FA /* ForecastTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		14C8FE9F27A6A7BF00E469FA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				14C8FEA027A6A7DD00E469FA /* CurrentWeatherAPI.playground */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
