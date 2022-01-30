@@ -39,6 +39,10 @@ class ViewController: UIViewController {
             self.listTableView.reloadData()
         }
         
+        listTableView.backgroundColor = .clear
+        listTableView.separatorStyle = .none
+        listTableView.showsVerticalScrollIndicator = false
+        
     }
 
 
