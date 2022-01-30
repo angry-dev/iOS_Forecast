@@ -190,6 +190,9 @@
                             <constraint firstItem="y87-eX-1Zr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xy5-NE-nQb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listTableView" destination="qX5-hV-sX7" id="UgH-Mu-Qws"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
