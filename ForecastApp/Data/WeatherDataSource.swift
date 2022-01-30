@@ -13,7 +13,7 @@ class WeatherDataSource {
     private init() { }
     
     var summary: CurrentWeather?
-    var forecast: Forecast?
+    var forecastLsit = [ForecastData]()
     
     let apiQueue = DispatchQueue(label: "ApiQeue", attributes: .concurrent)
     
@@ -37,9 +37,16 @@ class WeatherDataSource {
             self.fetchForecast(location: location) {(result) in
             switch result {
             case .success(let data):
-                self.forecast = data
+                self.forecastLsit = data.list.map {
+                    let dt = Date(timeIntervalSince1970: TimeInterval($0.dt))
+                    let icon = $0.weather.first?.icon ?? ""
+                    let weather = $0.weather.first?.description ?? "알 수 없음"
+                    let temperature = $0.main.temp
+                    
+                    return ForecastData(date: dt, icon: icon, weather: weather, temperature: temperature)
+                }
             default:
-                self.forecast = nil
+                self.forecastLsit = []
             }
             self.group.leave()
             }
